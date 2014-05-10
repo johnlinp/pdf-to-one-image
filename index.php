@@ -3,6 +3,7 @@
     <head>
         <title>PDF 2 Image</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="shortcut icon" href="./images/favicon.ico"/>
         <link href="css/flat-ui.css" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
     </head>
