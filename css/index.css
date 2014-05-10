@@ -1,0 +1,18 @@
+body {
+    background: #ECF0F1;
+    text-align: center;
+}
+
+.green {
+    color: #27AE60;
+}
+
+.step {
+    margin-top: 60px;
+    color: #7F8C8D;
+}
+
+.hand {
+    cursor: pointer;
+}
+
