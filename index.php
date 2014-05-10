@@ -9,7 +9,7 @@
 
     <body>
         <h1>PDF <span class="green">2</span> Image</h1>
-        <form action="index.php" method="post" enctype="multipart/form-data">
+        <form method="post" enctype="multipart/form-data">
             <h4 class="step">Step 1: Choose your PDF file</h4>
             <input type="file" name="file"><br>
             <h4 class="step">Step 2: Convert it</h4>
@@ -24,7 +24,7 @@ if(count($_FILES) != 0 && $_FILES["file"]["error"] == 0) {
     system('convert ' . $_FILES["file"]["tmp_name"] . ' -append -define jpg:extent=500kb ./results/' . $name . '.jpg', $ret);
 
     echo '<h4 class="step">Step 3: Download the image file</h4>';
-    echo '<a class="btn btn-primary" href="./results/' . $name . '.jpg">Download!</a>';
+    echo '<a class="btn btn-primary" href="download.php?fname=' . $name . '.jpg">Download!</a>';
 }
 ?>
     </body>
